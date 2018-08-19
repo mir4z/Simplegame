@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    private static Map<Integer, Location> locations = new HashMap<Integer, Location>();
+    private static Map<Integer, Location> locations = new HashMap<>();
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,6 +15,7 @@ public class Main {
         locations.put(3, new Location(3, "You are inside a building, a well house for a small spring"));
         locations.put(4, new Location(4, "You are in a valley beside a stream"));
         locations.put(5, new Location(5, "You are in the forest"));
+        locations.put(6, new Location(6, "You are in an old chapel"));
 
         int loc = 1;
         while (true) {
